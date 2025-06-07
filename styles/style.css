@@ -20,8 +20,49 @@ body{
     font-family: 'Nunito Sans', sans-serif;
     color: var(--font-color);
     font-size: 40px;
-    padding: 34px 84px;
 }
+
+.bg-img {
+    background-image: url("../assets/home-bg.avif");
+    background-size: cover;      
+    background-position: center; 
+    background-repeat: no-repeat;
+    padding: 34px 84px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.bg-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px); 
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.bg-img::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; /* Adjust as needed */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, #121212 100%);
+    pointer-events: none;
+}
+
+.bg-img * {
+    position: relative;
+    z-index: 2;
+}
+
 
 nav{
     display: flex;
@@ -69,12 +110,12 @@ nav .menu-text{
     font-weight: bold;
     line-height: 4.8rem;
     letter-spacing: -3px;
-    width: 100%;
+    width: 1090px;
 }
 
 .hero .sub-heading{
     font-size: 12.48px;
-    width: 38%;
+    width: 414.2px;
 }
 
 .hero-bottom-buttons{
@@ -83,7 +124,7 @@ nav .menu-text{
     align-items: center;
 }
 
-.hero-bottom-buttons button{
+button{
     outline: none;
     background: transparent;
     border: 0 solid #eee;
@@ -96,8 +137,231 @@ nav .menu-text{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #c5fcfc;
     font-size: 14.4px;
     padding: 22px 42px;
     letter-spacing: .11125rem;
 }
+
+
+@media (max-width: 1262px){
+    .hero .main-heading{
+        font-size: 84px;
+        width: 950px;
+        line-height: 4rem;
+    }
+    .hero-bottom-buttons button{
+        padding: 20px 40px;
+    }
+
+    .bg-img{
+        padding: 34px 75px;
+    }
+}
+@media (max-width: 1057px){
+    .hero .main-heading{
+        font-size: 78px;
+        width: 850px;
+        line-height: 3.8rem;
+    }
+    .hero-bottom-buttons button{
+        padding: 18px 36px;
+    }
+    .bg-img{
+        padding: 34px 60px;
+    }
+}
+@media (max-width: 922px){
+    .hero .main-heading{
+        font-size: 68px;
+        width: 750px;
+        line-height: 3.4rem;
+        letter-spacing: -2px;
+    }
+    .hero .sub-heading{
+        font-size: 12px;
+    }
+    .hero-bottom-buttons button{
+        padding: 16px 32px;
+    }
+    .bg-img{
+        padding: 34px 50px;
+    }
+    .hero{
+        gap: 25px;
+    }
+}
+@media (max-width: 758px){
+    .hero .main-heading{
+        font-size: 58px;
+        width: 650px;
+        letter-spacing: -1.5px;
+        line-height: 3rem;
+    }
+    .hero .sub-heading{
+        font-size: 11px;
+    }
+    .hero-bottom-buttons button{
+        padding: 14px 28px;
+        font-size: 13px;
+    }
+    .bg-img{
+        padding: 34px 40px;
+    }
+    .hero{
+        gap: 20px;
+    }
+}
+@media (max-width: 690px){
+    .hero .main-heading{
+        font-size: 50px;
+        width: 570px;
+        letter-spacing: -1.2px;
+        line-height: 2.8rem;
+    }
+    .hero .sub-heading{
+        font-size: 10px;
+    }
+    .hero-bottom-buttons button{
+        padding: 12px 24px;
+        font-size: 12px;
+    }
+    .bg-img{
+        padding: 34px 30px;
+    }
+    .hero{
+        gap: 12px;
+    }
+}
+@media (max-width: 580px){
+    .hero .main-heading{
+        font-size: 45px;
+        width: 500px;
+        letter-spacing: -1px;
+        line-height: 2.7rem;
+    }
+    .hero .sub-heading{
+        font-size: 10px;
+    }
+    .hero-bottom-buttons button{
+        padding: 10px 20px;
+        font-size: 11.5px;
+    }
+    .bg-img{
+        padding: 34px 20px;
+    }
+    .hero{
+        gap: 12px;
+    }
+}
+@media (max-width: 530px){
+    .hero .main-heading{
+        font-size: 45px;
+        width: 300px;
+        line-height: 2.7rem;
+        letter-spacing: -1px;
+    }
+    .hero .sub-heading{
+        font-size: 10px;
+        width: 250px;
+    }
+    .hero-bottom-buttons button{
+        padding: 10px 20px;
+        font-size: 11.5px;
+    }
+    .bg-img{
+        padding: 34px 20px;
+    }
+    .hero{
+        gap: 12px;
+    }
+}
+
+
+
+/* ////////////////////////////////////////////// HIGHLIGHTS SECTION \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+
+.highlights-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 100px 84px;
+}
+
+.highlights-section .highlights{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.highlights-section .highlights .highlights-heading{
+    font-size: 150px;
+    font-weight: bold;
+    line-height: 7.8rem;
+    letter-spacing: -8px;
+    width: 700px;
+}
+
+.highlights-section .highlights .highlights-sub-heading{
+    font-size: 28px;
+    line-height: 2rem;
+    width: 420px;
+    padding-left: 10px;
+}
+
+
+/* ////////////////////////////////////////////// TESTIMONIAL SECTION \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+
+.testimonials{
+    padding: 84px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.testimonial-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.testimonial-right{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 240px;
+}
+
+.testimonial-card{
+    width: 608px;
+    height: 409px;
+    background-color: #38383833;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 60px;
+}
+
+.testimonial-card .review{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 52px;
+    line-height: 3rem;
+    letter-spacing: -3px;
+    text-transform: capitalize;
+}
+
+.testimonial-card .name{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+

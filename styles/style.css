@@ -328,6 +328,7 @@ button:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 40px;
 }
 
 .key-features-info{
@@ -367,6 +368,7 @@ button:hover{
 .key-headings{
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
 
 .key-heading{
@@ -374,6 +376,7 @@ button:hover{
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: -3px;
+    line-height: 3.5rem;
 }
 
 .key-sub-heading{

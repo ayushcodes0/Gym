@@ -143,6 +143,13 @@ button{
     letter-spacing: .11125rem;
 }
 
+button:hover{
+    transition: all ease .5s;
+    background-color: #c5fcfc;
+    color: #121212;
+    cursor: pointer;
+}
+
 
 @media (max-width: 1262px){
     .hero .main-heading{
@@ -286,7 +293,7 @@ button{
     display: flex;
     justify-content: space-between;
     align-items: end;
-    padding: 100px 84px;
+    padding: 130px 84px;
 }
 
 .highlights-section .highlights{
@@ -341,6 +348,22 @@ button{
     display: block;
 }
 
+.cursor{
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    position: fixed;
+    border-radius: 50%;
+    z-index: 9;
+    font-size: 3px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+}
+
 .key-headings{
     display: flex;
     flex-direction: column;
@@ -382,10 +405,10 @@ button{
 
 
 .testi{
-    padding: 84px;
+    padding: 130px 84px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 100px;
 }
 
 .testi .testi-heading{
@@ -469,19 +492,68 @@ button{
 
 
 
+/* ////////////////////////////////////////////// FOOTER SECTION \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
-.cursor{
-    height: 10px;
-    width: 10px;
-    background-color: white;
-    position: fixed;
-    border-radius: 50%;
-    z-index: 9;
-    font-size: 3px;
-    color: white;
+
+.footer{
     display: flex;
-    align-items: center;
-    text-align: center;
+    flex-direction: column;
+    gap: 80px;
+    padding: 130px 84px;
 }
+
+.footer-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.footer-heading p{
+    width: 600px;
+    font-size: 150px;
+    font-weight: bold;
+    line-height:7rem;
+    letter-spacing: -6px;
+    text-transform: uppercase;
+}
+
+.quick-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--font-color);
+    border-bottom: 1px solid var(--font-color);
+    padding: 40px 0;
+}
+
+.quick-links .left{
+    display: flex;
+    gap: 60px;
+}
+
+.footer-sub-heading{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.footer-data{
+    font-size: 28px;
+}
+
+.right p{
+    text-align: end;
+}
+
+.rights{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+button.fill{
+    background-color: #c5fcfc;
+    color: #121212;
+}
+
+
 
 

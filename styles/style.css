@@ -310,12 +310,93 @@ button{
     padding-left: 10px;
 }
 
+.key-features{
+    padding: 84px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.contents{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.key-features-info{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.key-features-info button, .key-features-info2 button{
+    width: 200px;
+}
+
+.contents img{
+    width: 672px;
+    height: 448px;
+    border-radius: 1.5rem;
+    object-fit: cover;
+    display: block;
+}
+
+.key-headings{
+    display: flex;
+    flex-direction: column;
+}
+
+.key-heading{
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: -3px;
+}
+
+.key-sub-heading{
+    font-size: 22px;
+}
+
+.key-features-info2{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    gap: 50px;
+}
+
+.key-headings2{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+.key-headings2 .key-heading{
+    text-align: end;
+}
+
+
 
 /* ////////////////////////////////////////////// TESTIMONIAL SECTION \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
 
-.testimonials{
+.testi{
     padding: 84px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.testi .testi-heading{
+    font-size: 150px;
+    font-weight: bold;
+    line-height: 7.8rem;
+    letter-spacing: -8px;
+    text-transform: uppercase;
+}
+
+.testimonials{
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -346,6 +427,28 @@ button{
     padding: 60px;
 }
 
+.card1:hover{
+    background-color: rgba(221, 53, 0, 0.9);
+    transition: all ease .5s;
+}
+.card2:hover{
+    background-color: rgba(220, 229, 229, 0.9);
+    transition: all ease .5s;
+    color: #121212;
+}
+.card3:hover{
+    background-color: rgba(176, 221, 202, 0.9);
+    transition: all ease .5s;
+    color: #121212;
+}
+.card4:hover{
+    background-color: rgba(244, 227, 66, 0.9);
+    transition: all ease .5s;
+    color: #121212;
+}
+
+
+
 .testimonial-card .review{
     display: flex;
     justify-content: start;
@@ -362,6 +465,23 @@ button{
     align-items: center;
     text-transform: uppercase;
     font-size: 16px;
+}
+
+
+
+
+.cursor{
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    position: fixed;
+    border-radius: 50%;
+    z-index: 9;
+    font-size: 3px;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 

@@ -27,7 +27,8 @@ body{
     background-size: cover;      
     background-position: center; 
     background-repeat: no-repeat;
-    padding: 34px 84px;
+    padding: 0 84px;
+    padding-bottom: 34px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -64,10 +65,15 @@ body{
 }
 
 
-nav{
+nav {
+    top: 34px;
+    position: fixed;
+    z-index: 99;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    left: 84px;
+    right: 84px;
 }
 
 nav .logo{
@@ -559,4 +565,48 @@ button.fill{
 
 
 
+
+/* ////////////////////////////////////////////// RESPONSIVE KEY FEATURES \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+@media (max-width: 1255px){
+    .highlights-section .highlights .highlights-heading{
+        font-size: 120px;
+    }
+    .highlights-section .highlights .highlights-sub-heading{
+        font-size: 24px;
+    }
+    .contents img{
+        width: 600px;
+        height: 400px;
+    }
+    .key-heading{
+        font-size: 50px;
+    }
+    .key-sub-heading{
+        font-size: 18px;
+    }
+}
+@media (max-width: 1100px){
+    .highlights-section .highlights .highlights-heading{
+        font-size: 120px;
+    }
+    .highlights-section .highlights .highlights-sub-heading{
+        font-size: 24px;
+    }
+    .contents img{
+        width: 480px;
+        height: 320px;
+    }
+    .key-heading{
+        font-size: 40px;
+    }
+    .key-sub-heading{
+        font-size: 16px;
+    }
+}
+
+
+
+
+/* ////////////////////////////////////////////// RESPONSIVE KEY FEATURES \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 

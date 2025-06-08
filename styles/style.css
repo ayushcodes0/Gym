@@ -794,7 +794,7 @@ button.fill{
 
 @media (max-width: 628px) {
     .testimonial-card{
-        height: 40vw;
+        height: 60vw;
     }
     .testi .testi-heading{
         letter-spacing: -3px;
@@ -803,7 +803,7 @@ button.fill{
 }
 @media (max-width: 520px) {
     .testimonial-card{
-        height: 60vw;
+        height: 80vw;
     }
 }
 

@@ -449,8 +449,8 @@ button:hover{
 }
 
 .testimonial-card{
-    width: 608px;
-    height: 409px;
+    width: 42.5vw;
+    height: 28.95vw;
     background-color: #38383833;
     border-radius: 1.5rem;
     display: flex;
@@ -589,6 +589,8 @@ button.fill{
 @media (max-width: 1100px){
     .highlights-section .highlights .highlights-heading{
         font-size: 120px;
+        width: 600px;
+        letter-spacing: -.125rem;
     }
     .highlights-section .highlights .highlights-sub-heading{
         font-size: 24px;
@@ -605,8 +607,200 @@ button.fill{
     }
 }
 
+@media (max-width: 960px){
+    .highlights-section .highlights .highlights-heading{
+        font-size: 100px;
+        width: 500px;
+        line-height: 5rem;
+    }
+    .highlights-section .highlights .highlights-sub-heading{
+        font-size: 24px;
+    }
+    .contents img{
+        width: 100%;
+        height: 38vw;
+    }
+    .key-features-info{
+        align-items: center;
+    }
+    .key-features-info2{
+        align-items: center;
+    }
+    .key-headings{
+        align-items: center;
+    }
+    .key-headings2{
+        align-items: center;
+    }
+    .key-heading{
+        font-size: 40px;
+    }
+    .key-sub-heading{
+        font-size: 16px;
+    }
+    .contents{
+        flex-direction: column;
+    }
+    .contents-reverse{
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 885px){
+    .highlights-section .highlights .highlights-heading{
+        font-size: 80px;
+        width: 400px;
+    }
+    .highlights-section .highlights .highlights-sub-heading{
+        font-size: 22px;
+    }
+    .highlights-section{
+        flex-direction: column;
+        align-items: start;
+        gap: 50px;
+        padding: 130px 40px;
+    }
+    .highlights-section{
+        padding: 65px 40px;
+    }
+    .key-features{
+        padding: 65px 40px;
+    }
+    .testi{
+        padding: 65px 40px;
+    }
+    .footer{
+        padding: 65px 40px;
+    }
+    .testi{
+        gap: 20px;
+    }
+    nav{
+        left: 40px;
+        right: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contents img{
+        height: 60vw;
+    }
+    .key-heading{
+        text-align: center;
+    }
+    .key-headings2 .key-heading{
+        text-align: center;
+    }
+}
+
+@media (max-width: 471px){
+    .highlights-section .highlights .highlights-heading{
+        font-size: 60px;
+        width: 300px;
+    }
+    .highlights-section .highlights .highlights-sub-heading{
+        font-size: 18px;
+        width: 300px;
+    }
+}
 
 
 
-/* ////////////////////////////////////////////// RESPONSIVE KEY FEATURES \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
+/* ////////////////////////////////////////////// RESPONSIVE TESTIMONIAL SECTION \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+@media (max-width: 1300px) {
+    
+    .testi .testi-heading{
+        font-size: 12vw;
+    }
+    .testimonial-card .review{
+        font-size: 40px;
+        line-height: 3rem;
+        letter-spacing: -2.5px;
+    }
+    .testimonial-card{
+        padding: 40px;
+    }
+}
+
+@media (max-width: 1060px) {
+    .testimonial-card .review{
+        font-size: 32px;
+        line-height: 3rem;
+        letter-spacing: -2px;
+    }
+}
+
+@media (max-width: 960px) {
+    .testimonials{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .testimonial-left{
+        width: 100%;
+    }
+    .testimonial-right{
+        padding-top: 0;
+    }
+    .testimonial-card{
+        width: 100%;
+    }
+}
+
+@media (max-width: 628px) {
+    .testimonial-card{
+        height: 40vw;
+    }
+    .testi .testi-heading{
+        letter-spacing: -3px;
+    }
+    
+}
+@media (max-width: 520px) {
+    .testimonial-card{
+        height: 60vw;
+    }
+}
+
+
+
+/* ////////////////////////////////////////////// RESPONSIVE FOOTER SECTION \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+
+@media (max-width: 960px){
+    .footer-heading{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: start;
+    }
+    .footer-heading p{
+        font-size: 20vw;
+        line-height: 7.5rem;
+        width: 400px;
+    }
+}
+
+@media (max-width: 750px){
+    .quick-links{
+        align-items: start;
+        gap: 60px;
+    }
+    .footer-heading p{
+        line-height: 4.5rem;
+    }
+    .quick-links, .quick-links .left{
+        flex-direction: column;
+    }
+    .quick-links .right p{
+        text-align: start;
+    }
+    .footer-heading p{
+        width: 300px;
+    }
+    .footer{
+        gap: 50px;
+    }
+}

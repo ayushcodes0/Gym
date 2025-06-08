@@ -696,7 +696,7 @@ button.fill{
         letter-spacing: -.125rem;
         line-height: 3rem;
     }
-    .highlights-sub-heading{
+    .highlights-section .highlights .highlights-sub-heading{
         padding-left: 0;
     }
 }

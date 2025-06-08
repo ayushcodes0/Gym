@@ -133,6 +133,7 @@ button.team-button{
     .team-card{
        height: 90vw;
        width: 70vw;
+       background-color: red;
     }
     .team-heading p{
         font-size: 12vw;

@@ -91,6 +91,10 @@ nav .menu-text{
     gap: 10px;
 }
 
+.nav-right:hover{
+    cursor: pointer;
+}
+
 .nav-right .menu-icon{
     background-color: #a6a9b033;
     width: 42px;
@@ -833,4 +837,28 @@ button.fill{
     .footer{
         gap: 50px;
     }
+}
+
+
+/* ////////////////////////////////////////////// RESPONSIVE MENU SECTION \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+
+.menu-content{
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    position: absolute;
+    top: 100vh;
+    background-color: var(--bg-color);
+    opacity: 0;
+    transition: all ease .8s;
+}
+
+.cross-icon{
+    position: absolute;
+    top: 34px;
+    right: 84px;
+}
+.cross-icon:hover{
+    cursor: pointer;
 }

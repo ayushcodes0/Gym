@@ -953,5 +953,8 @@ button.fill{
     .menu-links{
         gap: 6px;
     }
+    .cross-icon{
+        right: 20px;
+    }
 }
 

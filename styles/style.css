@@ -687,9 +687,14 @@ button.fill{
     }
     .key-heading{
         text-align: center;
+        line-height: 2rem;
     }
     .key-headings2 .key-heading{
         text-align: center;
+    }
+    .highlights-section .highlights .highlights-heading{
+        letter-spacing: -.125rem;
+        line-height: 3rem;
     }
 }
 

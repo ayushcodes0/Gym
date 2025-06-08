@@ -402,6 +402,7 @@ button:hover{
     flex-direction: column;
     justify-content: end;
     align-items: end;
+    gap: 15px;
 }
 
 .key-headings2 .key-heading{
@@ -476,6 +477,10 @@ button:hover{
 .card4:hover{
     background-color: rgba(244, 227, 66, 0.9);
     transition: all ease .5s;
+    color: #121212;
+}
+.card5:hover{
+    background-color: rgba(125, 244, 66, 0.9);
     color: #121212;
 }
 
@@ -698,6 +703,13 @@ button.fill{
     }
     .highlights-section .highlights .highlights-sub-heading{
         padding-left: 0;
+        line-height: 1.3rem;
+    }
+    .key-features-info{
+        gap: 20px;
+    }
+    .key-features-info2{
+        gap: 20px;
     }
 }
 
@@ -755,6 +767,26 @@ button.fill{
     .testimonial-card{
         width: 100%;
     }
+    .card1{
+        background-color: rgba(221, 53, 0, 0.9);
+    }
+    .card2{
+        background-color: rgba(176, 221, 202, 0.9);
+        color: #121212;
+    }
+    .card3{
+        background-color: rgba(220, 229, 229, 0.9);
+        color: #121212;
+    }
+    .card4{
+        background-color: rgba(244, 227, 66, 0.9);
+        color: #121212;
+    }
+    .card5{
+        background-color: rgba(120, 205, 60, 0.9);
+        color: #121212;
+    }
+
 }
 
 @media (max-width: 628px) {

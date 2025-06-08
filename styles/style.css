@@ -8,11 +8,15 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 :root{
     --bg-color: #121315;
     --font-color: #e0eeee;
     --menu-bg-color: #a6a9b033
-
 }
 
 body{
@@ -896,8 +900,8 @@ button.fill{
     line-height: 1;
 }
 
-.menu-content ul li:hover{
-    cursor: pointer;
+.menu-content ul li a{
+    text-decoration: none;
 }
 
 .menu-links{

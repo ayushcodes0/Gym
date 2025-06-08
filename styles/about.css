@@ -1,0 +1,15 @@
+
+
+.hero-section{
+    height: 100vh;
+    padding: 34px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 800px){
+    .hero-section{
+        padding: 34px 20px;
+    }
+}

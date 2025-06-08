@@ -1,4 +1,9 @@
 
+:root{
+    --bg-color: #121315;
+    --font-color: #e0eeee;
+    --menu-bg-color: #a6a9b033
+}
 
 .hero-section{
     height: 100vh;
@@ -12,4 +17,78 @@
     .hero-section{
         padding: 34px 20px;
     }
+}
+
+.team-intro{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 70px 84px;
+    padding-top: 100px;
+}
+
+.team-heading p{
+    font-size: 12vw;
+    line-height: 8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.team-cards{
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;    
+    display: flex; 
+    gap: 40px;
+    align-items: center;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory; /* Enables snapping */
+
+}
+  
+.team-cards::-webkit-scrollbar {
+    display: none; 
+}
+  
+.team-card{
+    width: 40vw;
+    height: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border-radius: 1.5rem;
+    border: 2px solid var(--font-color);
+    flex: 0 0 auto; /* Prevent shrinking */
+    scroll-snap-align: start; /* Snap to each card */
+
+}
+
+.team-cards {
+    -webkit-overflow-scrolling: touch;
+}
+
+.team-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    gap: 4px;
+}
+
+.team-name{
+    font-size: 27px;
+}
+.team-designation{
+    font-size: 16px;
+}
+
+.team-card img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
 }

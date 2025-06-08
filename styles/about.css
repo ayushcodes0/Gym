@@ -128,7 +128,7 @@ button.team-button{
 @media (max-width: 625px ){
     .team-card{
        height: 90vw;
-       width: 90vw;
+       width: 85vw;
     }
     .team-heading p{
         font-size: 12vw;

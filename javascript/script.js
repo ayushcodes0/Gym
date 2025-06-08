@@ -16,9 +16,11 @@ const cross_button = document.getElementById("cross-icon");
 menu_button.addEventListener("click", function(){
     menu_content.style.top = "0";
     menu_content.style.opacity = "1";
+    document.body.classList.add("no-scroll");
 })
 
 cross_button.addEventListener("click", function(){
     menu_content.style.top = "100vh";
     menu_content.style.opacity = "0";
+    document.body.classList.remove("no-scroll");
 })

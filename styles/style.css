@@ -22,6 +22,11 @@ body{
     font-size: 40px;
 }
 
+body.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
+
 .bg-img {
     background-image: url("../assets/home-bg.avif");
     background-size: cover;      

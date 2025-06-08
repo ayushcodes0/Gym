@@ -235,10 +235,6 @@ button:hover{
     .hero .sub-heading{
         font-size: 10px;
     }
-    .hero-bottom-buttons button{
-        /* padding: 12px 24px;
-        font-size: 12px; */
-    }
     .bg-img{
         padding: 34px 30px;
     }
@@ -255,10 +251,6 @@ button:hover{
     }
     .hero .sub-heading{
         font-size: 10px;
-    }
-    .hero-bottom-buttons button{
-        /* padding: 10px 20px;
-        font-size: 11.5px; */
     }
     .bg-img{
         padding: 34px 20px;
@@ -277,10 +269,6 @@ button:hover{
     .hero .sub-heading{
         font-size: 10px;
         width: 250px;
-    }
-    .hero-bottom-buttons button{
-        /* padding: 10px 20px;
-        font-size: 11.5px; */
     }
     .bg-img{
         padding: 34px 20px;
@@ -480,7 +468,7 @@ button:hover{
     color: #121212;
 }
 .card5:hover{
-    background-color: rgba(125, 244, 66, 0.9);
+    background-color: rgba(133, 197, 88, 0.9);
     color: #121212;
 }
 
@@ -771,11 +759,12 @@ button.fill{
         background-color: rgba(221, 53, 0, 0.9);
     }
     .card2{
-        background-color: rgba(176, 221, 202, 0.9);
+        background-color: rgba(220, 229, 229, 0.9);
+
         color: #121212;
     }
     .card3{
-        background-color: rgba(220, 229, 229, 0.9);
+        background-color: rgba(176, 221, 202, 0.9);
         color: #121212;
     }
     .card4{
@@ -786,6 +775,7 @@ button.fill{
         background-color: rgba(133, 197, 88, 0.9);
         color: #121212;
     }
+
 
 }
 

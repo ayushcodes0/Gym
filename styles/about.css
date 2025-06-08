@@ -114,6 +114,10 @@ button.team-button{
        height: 60vw;
        width: 80vw;
     }
+    .team-card img{
+        width: 20vw;
+        height: 20vw;
+    }
     .team-intro{
         padding: 100px 20px;
     }
@@ -144,6 +148,10 @@ button.team-button{
         line-height: 2.8rem;
         font-weight: bold;
         letter-spacing: 2px;
+    }
+    .team-card img{
+        width: 25vw;
+        height: 25vw;
     }
     .team-card{
         height: 120vw;

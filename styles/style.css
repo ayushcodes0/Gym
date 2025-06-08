@@ -661,23 +661,23 @@ button.fill{
         padding: 130px 40px;
     }
     .highlights-section{
-        padding: 65px 40px;
+        padding: 65px 20px;
     }
     .key-features{
-        padding: 65px 40px;
+        padding: 65px 20px;
     }
     .testi{
-        padding: 65px 40px;
+        padding: 65px 20px;
     }
     .footer{
-        padding: 65px 40px;
+        padding: 65px 20px;
     }
     .testi{
         gap: 20px;
     }
     nav{
-        left: 40px;
-        right: 40px;
+        left: 20px;
+        right: 20px;
     }
 }
 

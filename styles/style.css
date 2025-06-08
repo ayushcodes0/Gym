@@ -236,8 +236,8 @@ button:hover{
         font-size: 10px;
     }
     .hero-bottom-buttons button{
-        padding: 12px 24px;
-        font-size: 12px;
+        /* padding: 12px 24px;
+        font-size: 12px; */
     }
     .bg-img{
         padding: 34px 30px;
@@ -257,8 +257,8 @@ button:hover{
         font-size: 10px;
     }
     .hero-bottom-buttons button{
-        padding: 10px 20px;
-        font-size: 11.5px;
+        /* padding: 10px 20px;
+        font-size: 11.5px; */
     }
     .bg-img{
         padding: 34px 20px;
@@ -279,8 +279,8 @@ button:hover{
         width: 250px;
     }
     .hero-bottom-buttons button{
-        padding: 10px 20px;
-        font-size: 11.5px;
+        /* padding: 10px 20px;
+        font-size: 11.5px; */
     }
     .bg-img{
         padding: 34px 20px;

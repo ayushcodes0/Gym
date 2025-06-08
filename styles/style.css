@@ -106,7 +106,7 @@ nav .menu-text{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 170px 70px;
+    padding: 250px 70px 80px 70px;
     text-align: center;
     gap: 30px;
 }

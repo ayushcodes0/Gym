@@ -1,0 +1,132 @@
+
+:root{
+    --bg-color: #121315;
+    --font-color: #e0eeee;
+    --menu-bg-color: #a6a9b033
+}
+
+.membership{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+    column-gap: 20px;
+    padding: 70px 84px;
+}
+
+.membership-card:nth-child(even) {
+    justify-self: end;
+}
+
+.membership-card:nth-child(odd) {
+    justify-self: start;
+}
+
+.membership-card{
+    width: 42vw;
+    height: 500px;
+    background-color: #18191c;
+    border-radius: 1.5rem;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.membership-heading{
+    font-size: 34px;
+}
+
+.membership-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.membership-desc p{
+    font-size: 16px;
+}
+
+button.membership-btn{
+    padding: 18px;
+}
+
+.membership-desc p::before {
+    content: "•"; /* Unicode bullet */
+    color: var(--font-color); /* Change color if needed */
+    margin-right: 8px; /* Space between bullet and text */
+}
+
+@media (max-width: 1321px){
+    .membership-heading{
+        font-size: 2.5vw;
+    }
+    .membership-desc p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1005px){
+    .membership{
+        grid-template-columns: 1fr;
+    }
+    .membership-card{
+        width: 100%;
+    }
+    .membership-heading{
+        font-size: 40px;
+    }
+    .membership-desc p{
+        font-size: 20px;
+    }
+    .membership-card:nth-child(even) {
+        justify-self: start;
+    }
+}
+
+@media (max-width: 885px){
+    .membership{
+        padding: 70px 20px;
+    }
+}
+
+@media (max-width: 782px){
+    .membership-heading{
+        font-size: 36px;
+    }
+    .membership-desc p{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 603px){
+    .membership-heading{
+        font-size: 32px;
+    }
+    .membership-desc p{
+        font-size: 18px;
+    }
+}
+@media (max-width: 553px){
+    .membership-heading{
+        font-size: 28px;
+    }
+    .membership-desc p{
+        font-size: 16px;
+    }
+}
+@media (max-width: 509px){
+    .membership-heading{
+        font-size: 28px;
+    }
+    .membership-desc p{
+        font-size: 14px;
+    }
+}
+@media (max-width: 463px){
+    .membership-heading{
+        font-size: 28px;
+    }
+    .membership-desc p{
+        font-size: 12px;
+    }
+}

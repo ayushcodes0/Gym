@@ -129,4 +129,7 @@ button.membership-btn{
     .membership-desc p{
         font-size: 12px;
     }
+    .membership-card{
+        padding: 20px;
+    }
 }

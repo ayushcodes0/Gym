@@ -1,9 +1,10 @@
 
 
 .trainers{
-    display: grid;
+    display: flex;
     /* grid-template-columns: 1fr 1fr 1fr; */
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 20px;
     row-gap: 80px;
     padding: 70px 84px;

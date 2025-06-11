@@ -5,7 +5,6 @@
     /* grid-template-columns: 1fr 1fr 1fr; */
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
     row-gap: 80px;
     padding: 70px 84px;
 }
@@ -19,7 +18,7 @@
 
 .trainer-card img{
     width: 22vw;
-    height: 26vw;
+    height: 29vw;
     object-fit: cover;
 
 }
@@ -40,6 +39,48 @@
     width: 22vw;
 }
 
-@media screen {
-    
+@media (max-width: 885px) {
+    .trainers{
+        padding: 70px 20px;
+    }
+    .trainer-card{
+        width: 29vw;
+    }
+    .trainer-description{
+        width: 29vw;
+    }
+    .trainer-card img{
+        width: 29vw;
+        height: 38vw;
+    }
+
+}
+
+@media (max-width: 660px){
+    .trainer-card{
+        width: 44vw;
+    }
+    .trainer-description{
+        width: 44vw;
+    }
+    .trainer-card img{
+        width: 44vw;
+        height: 50vw;
+    }
+}
+
+@media (max-width: 500px){
+    .trainers{
+        justify-content: center;
+    }
+    .trainer-card{
+        width: 80vw;
+    }
+    .trainer-description{
+        width: 80vw;
+    }
+    .trainer-card img{
+        width: 80vw;
+        height: 95vw;
+    }
 }

@@ -1,0 +1,39 @@
+
+
+.trainers{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    justify-content: space-between;
+    gap: 20px;
+    row-gap: 80px;
+    padding: 70px 84px;
+}
+
+.trainer-card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.trainer-card img{
+    width: 22vw;
+    height: 26vw;
+    object-fit: cover;
+
+}
+
+.trainer-name{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.trainer-designation{
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.trainer-description{
+    font-size: 16px;
+    width: 22vw;
+}

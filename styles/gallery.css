@@ -1,0 +1,119 @@
+.gallery {
+    padding: 70px 84px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5.5vw;
+}
+
+
+.gallery-card {
+    width: 41vw;
+    height: 400px;
+    background-color: red;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 1.5rem;
+}
+
+.gallery-card:nth-child(even) {
+    justify-self: end;
+}
+
+.gallery-card:nth-child(odd) {
+    justify-self: start;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.gallery-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s ease;
+    border-radius: 1.5rem;
+}
+
+/* Overlay to darken the image */
+.gallery-img::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease;
+    z-index: 1;
+}
+
+/* Description stays aligned as you defined */
+.gallery-img-description {
+    font-size: 28px;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    right: 60px;
+    bottom: 60px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Hover effect */
+.gallery-card:hover .gallery-img::after {
+    background-color: rgba(0, 0, 0, 0.536);
+    backdrop-filter: blur(2px); /* frosted glass effect */
+}
+
+.gallery-card:hover .gallery-img-description {
+    opacity: 1;
+}
+
+
+@media (max-width: 1111px){
+    .gallery{
+        grid-template-columns: 1fr;
+        justify-self: center;
+        padding: 70px 0px;
+    }
+    .gallery-card{
+        width: 84vw;
+        height: 600px;
+    }
+}
+
+@media (max-width: 885px){
+    .gallery{
+        row-gap: 40px;
+    }
+    .gallery-card{
+        width: 94vw;
+        height: 500px;
+    }
+}
+
+@media (max-width: 613px){
+    .gallery-card{
+        width: 94vw;
+        height: 400px;
+    }
+}
+
+@media (max-width: 450px){
+    .gallery-card{
+        width: 94vw;
+        height: 300px;
+    }
+}
+

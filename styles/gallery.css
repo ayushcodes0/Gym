@@ -93,6 +93,13 @@
         height: 600px;
         justify-self: center;
     }
+    .gallery-card:nth-child(even) {
+        justify-self: end;
+    }
+    
+    .gallery-card:nth-child(odd) {
+        justify-self: start;
+    }
 }
 
 @media (max-width: 885px){

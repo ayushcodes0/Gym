@@ -84,12 +84,13 @@
 @media (max-width: 1111px){
     .gallery{
         grid-template-columns: 1fr;
-        justify-self: center;
         padding: 70px 0px;
+        justify-self: center;
     }
     .gallery-card{
         width: 84vw;
         height: 600px;
+        justify-self: center;
     }
 }
 

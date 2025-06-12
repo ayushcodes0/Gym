@@ -85,6 +85,7 @@
     .gallery{
         grid-template-columns: 1fr;
         padding: 70px 0px;
+        justify-items: center; /* ✅ add this */
         justify-self: center;
     }
     .gallery-card{

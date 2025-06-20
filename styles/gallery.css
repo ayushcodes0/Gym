@@ -124,5 +124,9 @@
         width: 94vw;
         height: 300px;
     }
+    .gallery-img-description{
+        left: 30px;
+        right: 30px;
+    }
 }
 

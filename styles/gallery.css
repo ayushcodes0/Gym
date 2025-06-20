@@ -74,10 +74,12 @@
 .gallery-card:hover .gallery-img::after {
     background-color: rgba(0, 0, 0, 0.536);
     backdrop-filter: blur(2px); /* frosted glass effect */
+    transition: all ease .5s;
 }
 
 .gallery-card:hover .gallery-img-description {
     opacity: 1;
+    transition: all ease .5s;
 }
 
 
@@ -127,6 +129,7 @@
     .gallery-img-description{
         left: 30px;
         right: 30px;
+        font-size: 20px;
     }
 }
 

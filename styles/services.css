@@ -81,7 +81,16 @@
 
 @media (max-width: 500px){
     .services-heading{
-        font-size: 55px;
+        font-size: 55px; 
+    }
+    .services-info p{
+        font-size: 18px;
+        width: 100%;
+    }
+    .services-card{
+        padding-top: 40px;
+        padding: 20px;
+        height: 400px;
     }
 }
 @media (max-width: 430px){
